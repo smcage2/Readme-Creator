@@ -24,7 +24,7 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {
   if (license === "MIT"){
     return `
-    MIT License ${data.github}
+    MIT License 
     
     Copyright (c) 2022 
     
@@ -86,9 +86,9 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have any questions please feel free to contact me at:
-  - Github:(https://github.com/${data.github})  
+  - Github: https://github.com/${data.github}  
   - Email: ${data.email}
 `;
 }
 
-export default generateMarkdown;
+module.exports = generateMarkdown;
